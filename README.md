@@ -1,3 +1,9 @@
+Gerenciador de projeto Costs:
+
+Desenvolvido durante o curso de ReactJS do Canal Hora de Codar. 
+Aplicação na qual gerenciamos orçamento de projetos e alocamos serviços aos mesmos de acordo com o orçamento restante. Projeto desenvolvido em React e com utilização de API, onde utilizamos o json-server para simular uma API de banco de dados. Layout componentizado e utilização de Hooks do React como useState e useEffect.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
