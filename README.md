@@ -1,92 +1,66 @@
-Gerenciador de projeto Costs:
+# Costs - Gerenciador de Projetos 💰
 
-Desenvolvido durante o curso de ReactJS do Canal Hora de Codar. 
-Aplicação na qual gerenciamos o orçamento de projetos e alocamos serviços aos mesmos de acordo com o orçamento restante. Projeto desenvolvido em React e com utilização de API, onde utilizamos o json-server para simular uma API de banco de dados. Layout componentizado e utilização de Hooks do React como useState e useEffect.
+Aplicação web desenvolvida em React para o gerenciamento de orçamentos de projetos. Crie projetos, defina um orçamento e adicione serviços, controlando os custos de forma simples e eficaz.
 
-![image](https://user-images.githubusercontent.com/103129996/165330718-d9b18c6d-514b-42e6-a1d8-c1f92f3b3c94.png)
+![Página inicial do projeto Costs](https://user-images.githubusercontent.com/103129996/165330718-d9b18c6d-514b-42e6-a1d8-c1f92f3b3c94.png)
 
-![image](https://user-images.githubusercontent.com/103129996/165331296-ac355ad7-2153-4dd4-bd3b-17d76c6777fe.png)
+## ✨ Funcionalidades
 
+* **Criar Projetos:** Cadastre novos projetos com nome, orçamento total e categoria.
+* **Listar e Visualizar:** Veja todos os seus projetos em um layout de cards.
+* **Editar e Excluir:** Gerencie seus projetos, podendo atualizá-los ou removê-los.
+* **Adicionar Serviços:** Dentro de um projeto, adicione serviços com nome, custo e descrição.
+* **Controle de Orçamento:** O sistema valida se o custo de um novo serviço não ultrapassa o orçamento restante do projeto.
+* **Layout Responsivo:** Interface adaptável para diferentes tamanhos de tela.
 
-![image](https://user-images.githubusercontent.com/103129996/165330904-72d201d5-5336-467a-8ad3-8255dd327890.png)
+## 🛠️ Tecnologias Utilizadas
 
-![image](https://user-images.githubusercontent.com/103129996/165331038-0fb41c5f-242f-4d54-b726-00d2402ff00d.png)
+* **[ReactJS](https://reactjs.org/)**: Biblioteca para construção da interface de usuário.
+* **[React Router Dom](https://reactrouter.com/)**: Para gerenciamento das rotas da aplicação.
+* **[React Hooks](https://reactjs.org/docs/hooks-intro.html)**: (`useState`, `useEffect`) para gerenciamento de estado e ciclo de vida dos componentes.
+* **[JSON Server](https://github.com/typicode/json-server)**: Para simular uma API RESTful completa para o frontend.
+* **CSS Modules**: Para estilização dos componentes de forma escopada.
 
-![image](https://user-images.githubusercontent.com/103129996/165331168-00c8ee61-4166-46b8-aa8d-5656194213a5.png)
+## 🚀 Como Executar o Projeto Localmente
 
+Para rodar este projeto, você precisará ter o [Node.js](https://nodejs.org/en/) e o [Git](https://git-scm.com/) instalados em sua máquina.
 
+1.  **Clone o repositório:**
+    ```bash
+    git clone (https://github.com/EdsonAkaves/projeto-costs-reactjs)
+    ```
 
+2.  **Acesse o diretório do projeto:**
+    ```bash
+    cd nome-do-repositorio
+    ```
 
+3.  **Instale as dependências do projeto:**
+    ```bash
+    npm install
+    ```
 
+4.  **Inicie a API com o JSON Server:**
+    *O projeto utiliza o `json-server` para simular o backend. Execute o comando abaixo em um terminal para iniciar o servidor na porta 5000.*
+    ```bash
+    npm run backend
+    ```
+    *(**Observação:** Você talvez precise adicionar o script `"backend": "json-server --watch db.json --port 5000"` ao seu arquivo `package.json`)*
 
-# Getting Started with Create React App
+5.  **Inicie a aplicação React:**
+    *Em outro terminal, execute o comando para iniciar o servidor de desenvolvimento do React.*
+    ```bash
+    npm start
+    ```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+6.  Abra seu navegador e acesse `http://localhost:3000` para ver a aplicação.
 
-## Available Scripts
+## 🖼️ Screenshots
 
-In the project directory, you can run:
+| Página de Projetos | Criando um Novo Projeto |
+| :---: | :---: |
+| ![Página de listagem de projetos](https://user-images.githubusercontent.com/103129996/165331296-ac355ad7-2153-4dd4-bd3b-17d76c6777fe.png) | ![Página de criação de um novo projeto](https://user-images.githubusercontent.com/103129996/165330904-72d201d5-5336-467a-8ad3-8255dd327890.png) |
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# projeto-costs-reactjs
+| Detalhes do Projeto | Adicionando um Serviço |
+| :---: | :---: |
+| ![Página de detalhes de um projeto](https://user-images.githubusercontent.com/103129996/165331038-0fb41c5f-242f-4d54-b726-00d2402ff00d.png) | ![Formulário para adicionar um novo serviço](https://user-images.githubusercontent.com/103129996/165331168-00c8ee61-4166-46b8-aa8d-5656194213a5.png) |
