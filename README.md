@@ -27,7 +27,7 @@ Para rodar este projeto, você precisará ter o [Node.js](https://nodejs.org/en/
 
 1.  **Clone o repositório:**
     ```bash
-    git clone (https://github.com/EdsonAkaves/projeto-costs-reactjs)
+    git clone https://github.com/EdsonAkaves/projeto-costs-reactjs
     ```
 
 2.  **Acesse o diretório do projeto:**
